@@ -5,27 +5,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Function to check and show/hide exam columns
     function checkExamTimes() {
+        // Use UTC time based on server time
         const now = new Date();
-        const currentHour = now.getHours();
-        const currentMinute = now.getMinutes();
+        const currentHour = now.getUTCHours();
+        const currentMinute = now.getUTCMinutes();
         
-        // Convert current time to minutes since midnight
+        // Convert current time to minutes since midnight (UTC)
         const currentTimeInMinutes = currentHour * 60 + currentMinute;
 
-        // Debug: Console log current time for verification
-        console.log(`Current Time: ${currentHour}:${currentMinute}`);
+        // Debug: Console log current UTC time for verification
+        console.log(`Current UTC Time: ${currentHour}:${currentMinute}`);
 
-        // Check 10:00 exam column (show at local 14:00)
+        // Check 10:00 exam column (show at UTC 13:15)
         const exam10Column = document.getElementById('exam-10-00');
-        const exam10Time = 14 * 60 + 0; // 2:00 PM
+        const exam10Time = 13 * 60 + 15; // 13:15 UTC
         if (currentTimeInMinutes >= exam10Time) {
             exam10Column.style.display = 'block';
             console.log('10:00 Exam Column Activated');
         }
 
-        // Check 12:00 exam column (show at local 14:15)
+        // Check 12:00 exam column (show at UTC 13:20)
         const exam12Column = document.getElementById('exam-12-00');
-        const exam12Time = 14 * 60 + 15; // 2:15 PM
+        const exam12Time = 13 * 60 + 20; // 13:20 UTC
         if (currentTimeInMinutes >= exam12Time) {
             exam12Column.style.display = 'block';
             console.log('12:00 Exam Column Activated');
