@@ -1,53 +1,156 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
+    <!-- Meta teqlər -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Səhifənin başlığı -->
     <title>Şəki-Zaqatala Regional Təhsil İdarəsi - Exam Qeydiyyatı</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Əlavə custom stil -->
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Zəhmət olmazsa Müraciət etdiyiniz vəzifəni seçin</h1>
-        
-        <div class="exam-grid">
-            <!-- Saat 10:00-da başlayan vəzifələr -->
-            <div class="exam-column" id="exam-10-00" style="display: none;">
-                <h2 class="exam-time-header">Saat 10:00</h2>
-                <a href="#" class="exam-button" data-position="Laborant" data-time="13:15">
-                    <span class="position-name">Laborant</span>
-                </a>
-                <a href="#" class="exam-button" data-position="Təsərrüfat Müdiri" data-time="13:15">
-                    <span class="position-name">Təsərrüfat Müdiri</span>
-                </a>
-            </div>
-
-            <!-- Saat 12:00-da başlayan vəzifələr -->
-            <div class="exam-column" id="exam-12-00" style="display: none;">
-                <h2 class="exam-time-header">Saat 12:00</h2>
-                <a href="#" class="exam-button" data-position="Kargüzar" data-time="13:20">
-                    <span class="position-name">Kargüzar (Katibə-makinaçı)</span>
-                </a>
-                <a href="#" class="exam-button" data-position="Kitabxana Müdiri" data-time="13:20">
-                    <span class="position-name">Kitabxana Müdiri (Kitabxanaçı)</span>
-                </a>
-                <a href="#" class="exam-button" data-position="Çağırışaqədər Hazırlıq Rəhbəri" data-time="13:20">
-                    <span class="position-name">Çağırışaqədər Hazırlıq Rəhbəri</span>
-                </a>
+        <!-- Səhifə başlığı -->
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <h1 class="display-5 fw-bold text-danger">Zəhmət olmazsa Müraciət etdiyiniz vəzifəni seçin</h1>
             </div>
         </div>
 
-        <div class="exam-rules">
-            <h3>İmtahan Qaydaları</h3>
-            <ul>
-                <li>İmtahan zalında səssizliyə riayət edin</li>
-                <li>Çatışmazlıqları əl qaldırmaqla zal nəzarətçisinə sakit və nəzakətlə bildirin</li>
-                <li>Ekranda yazılan yazılara və xəbərdarlıqlara diqqət edin</li>
-                <li>Vaxtı düzgün idarə edin</li>
-            </ul>
+        <!-- Exam Grid -->
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="row g-4">
+            <!-- 10:00 Exam Column -->
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3 class="card-title mb-0">Saat 10:00</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            
+                            <a href="https://forms.office.com/r/fQ3z6Uwq7b" 
+                               class="btn btn-success exam-button" 
+                               data-position="Laborant">
+                                Laborant
+                            </a>
+                            
+                            
+                            <a href="https://forms.office.com/r/f02xum1QDT" 
+                               class="btn btn-success exam-button" 
+                               data-position="Təsərrüfat Müdiri">
+                                Təsərrüfat Müdiri
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12:00 Exam Column 
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3 class="card-title mb-0">Saat 12:00</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            
+                            <a href="https://forms.office.com/r/2LMj9C0MGS" 
+                               class="btn btn-info exam-button" 
+                               data-position="Kargüzar">
+                                Kargüzar (Katibə-makinaçı)
+                            </a>
+                            
+                            
+                            <a href="https://forms.office.com/r/7kjjdXF2fK" 
+                               class="btn btn-info exam-button" 
+                               data-position="Kitabxana Müdiri">
+                                Kitabxana Müdiri (Kitabxanaçı)
+                            </a>
+                            
+                            
+                            <a href="https://forms.office.com/r/JsQDfzT3PU" 
+                               class="btn btn-info exam-button" 
+                               data-position="Çağırışaqədər Hazırlıq Rəhbəri">
+                                Çağırışaqədər Hazırlıq Rəhbəri
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+            <!-- 15:00 Exam Column 
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white text-center">
+                        <h3 class="card-title mb-0">Saat 15:00</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-grid gap-2">
+                            
+                            <a href="https://forms.office.com/r/sHL2KQSzkQ" 
+                               class="btn btn-warning exam-button" 
+                               data-position="Kompüter Laborantı">
+                                Kompüter Laborantı (İnformatika)
+                            </a>
+                            
+                            
+                            <a href="https://forms.microsoft.com/ubr" 
+                               class="btn btn-warning exam-button" 
+                               data-position="Uşaq Birliyi Rəhbəri">
+                                Uşaq Birliyi Rəhbəri (UBR)
+                            </a>
+                            
+                           
+                            <a href="https://forms.office.com/r/hyv3J2mZXi" 
+                               class="btn btn-warning exam-button" 
+                               data-position="Mühasib">
+                                Mühasib
+                            </a>
+                            
+                            
+                            <a href="https://forms.office.com/r/aSCaB6Pd92" 
+                               class="btn btn-warning exam-button" 
+                               data-position="Psixoloq">
+                                Psixoloq
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+
+        <!-- İmtahan Qaydaları -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-danger text-white text-center">
+                        <h3 class="card-title mb-0">İmtahan Qaydaları</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">İmtahan zalında səssizliyə riayət edin</li>
+                            <li class="list-group-item">Çatışmazlıqları əl qaldırmaqla zal nəzarətçisinə sakit və nəzakətlə bildirin</li>
+                            <li class="list-group-item">Ekranda yazılan yazılara və xəbərdarlıqlara diqqət edin</li>
+                            <li class="list-group-item">Vaxtı düzgün idarə edin</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- Bootstrap JS və Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script src="scripts.js"></script>
 </body>
 </html>
