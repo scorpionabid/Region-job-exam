@@ -3,55 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Şəki-Zaqatala Regional Təhsil İdarəsi</title>
-    <link rel="stylesheet" href="style.css"> <!-- Xarici CSS faylı bağlantısı -->
+    <title>Şəki-Zaqatala Regional Təhsil İdarəsi - Exam Qeydiyyatı</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <!-- Yuxarıda qırmızı rəngdə xəbərdarlıq mətni -->
-        <h2 class="warning-text">Zəhmət olmazsa Müraciət etdiyiniz vəzifəni seçin</h2>
+        <h1 class="title">Zəhmət olmazsa Müraciət etdiyiniz vəzifəni seçin</h1>
         
-        <!-- Vəzifə adları və buttonlar -->
-        <div class="grid-container">
-            <div class="job">
-                <p>Kargüzar (katibə-makinaçı)</p>
-                <button onclick="redirectTo('https://sim.edu.az', 'Kargüzar (katibə-makinaçı)')">İmtahana Daxil Ol</button>
+        <div class="exam-grid">
+            <!-- Saat 10-da başlayan vəzifələr -->
+            <div class="exam-column">
+                <h2 class="exam-time-header">Saat 10:00</h2>
+                <a href="#" class="exam-button" data-position="Laborant" data-time="10:00">
+                    <span class="position-name">Laborant</span>
+                </a>
+                <a href="#" class="exam-button" data-position="Təsərrüfat Müdiri" data-time="10:00">
+                    <span class="position-name">Təsərrüfat Müdiri</span>
+                </a>
             </div>
-            <div class="job">
-                <p>Laborant</p>
-                <button onclick="redirectTo('laborant.html', 'Laborant')">İmtahana Daxil Ol</button>
+
+            <!-- Saat 12-də başlayan vəzifələr -->
+            <div class="exam-column">
+                <h2 class="exam-time-header">Saat 12:00</h2>
+                <a href="#" class="exam-button" data-position="Kargüzar" data-time="12:00">
+                    <span class="position-name">Kargüzar (Katibə-makinaçı)</span>
+                </a>
+                <a href="#" class="exam-button" data-position="Kitabxana Müdiri" data-time="12:00">
+                    <span class="position-name">Kitabxana Müdiri (Kitabxanaçı)</span>
+                </a>
+                <a href="#" class="exam-button" data-position="Çağırışaqədər Hazırlıq Rəhbəri" data-time="12:00">
+                    <span class="position-name">Çağırışaqədər Hazırlıq Rəhbəri</span>
+                </a>
             </div>
-            <div class="job">
-                <p>Kompüter Laborantı</p>
-                <button onclick="redirectTo('komputer-laboranti.html', 'Kompüter Laborantı')">İmtahana Daxil Ol</button>
+
+            <!-- Saat 15-də başlayan vəzifələr -->
+            <div class="exam-column">
+                <h2 class="exam-time-header">Saat 15:00</h2>
+                <a href="#" class="exam-button" data-position="Kompüter Laborantı" data-time="15:00">
+                    <span class="position-name">Kompüter Laborantı (İnformatika)</span>
+                </a>
+                <a href="#" class="exam-button" data-position="Uşaq Birliyi Rəhbəri" data-time="15:00">
+                    <span class="position-name">Uşaq Birliyi Rəhbəri (UBR)</span>
+                </a>
+                <a href="#" class="exam-button" data-position="Mühasib" data-time="15:00">
+                    <span class="position-name">Mühasib</span>
+                </a>
+                <a href="#" class="exam-button" data-position="Psixoloq" data-time="15:00">
+                    <span class="position-name">Psixoloq</span>
+                </a>
             </div>
-            <div class="job">
-                <p>Mühasib</p>
-                <button onclick="redirectTo('muhasib.html', 'Mühasib')">İmtahana Daxil Ol</button>
-            </div>
-            <div class="job">
-                <p>Psixoloq</p>
-                <button onclick="redirectTo('psixoloq.html', 'Psixoloq')">İmtahana Daxil Ol</button>
-            </div>
-            <div class="job">
-                <p>Təsərrüfat müdiri (təsərrüfat işləri üzrə direktor müavini)</p>
-                <button onclick="redirectTo('teserrufat-mudiri.html', 'Təsərrüfat müdiri (təsərrüfat işləri üzrə direktor müavini)')">İmtahana Daxil Ol</button>
-            </div>
-            <div class="job">
-                <p>UBR</p>
-                <button onclick="redirectTo('ubr.html', 'UBR')">İmtahana Daxil Ol</button>
-            </div>
-            <div class="job">
-                <p>Kitabxana müdiri (kitabxanaçı)</p>
-                <button onclick="redirectTo('kitabxana-mudiri.html', 'Kitabxana müdiri (kitabxanaçı)')">İmtahana Daxil Ol</button>
-            </div>
-            <div class="job">
-                <p>Çağırışaqədər hazırlıq rəhbəri</p>
-                <button onclick="redirectTo('cagirisaqeder-hazirliq.html', 'Çağırışaqədər hazırlıq rəhbəri')">İmtahana Daxil Ol</button>
-            </div>
+        </div>
+
+        <div class="exam-rules">
+            <h3>İmtahan Qaydaları</h3>
+            <ul>
+                <li>İmtahan zalında səssizliyə riayət edin</li>
+                <li>Çatışmazlıqları əl qaldırmaqla zal nəzarətçisinə sakit və nəzakətlə bildirin</li>
+                <li>Ekranda yazılan yazılara və xəbərdarlıqlara diqqət edin</li>
+                <li>Vaxtı düzgün idarə edin</li>
+            </ul>
         </div>
     </div>
 
-    <script src="scripts.js"></script> <!-- Xarici JS faylı bağlantısı -->
+    <script src="scripts.js"></script>
 </body>
 </html>
